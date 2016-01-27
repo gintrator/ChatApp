@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    title Chat App
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+  body
+    div#name
+      div.container-fluid
+        div.row
+          div.col-md-10
+            h3 Chat App
+            p Please enter a chat name.
+            form#name-form
+              input#name-input.form-control(autocomplete='off', placeholder='Enter a chat name.')
+          div.col-md-2
+            h3 Connected Users
+            ul#connected-users.list-unstyled
+    div#chat
+      div.container-fluid
+        div.row
+          div.navbar.navbar-fixed-top(style='background: white')
+            div.col-md-10
+              h3#chatname
+            div.col-md-2
+              h3 Connected Users
+        
+        div.row(style='padding-top:5em; padding-bottom: 4em')
+          div.col-md-10
+            ul#messages.list-unstyled
+          div.col-md-2
+            ul#connected-users.list-unstyled
+
+        div.row
+          div.col-md-12.navbar.navbar-fixed-bottom
+            form#chat-form
+              input#chat-input.form-control(autocomplete='off', placeholder='Hit enter to send message.')
+          
+  script(src='https://code.jquery.com/jquery-1.11.1.js')
+  script(src='https://cdn.socket.io/socket.io-1.2.0.js')
+  script(src='js/chat.js')

@@ -1,0 +1,30 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font: 13px Helvetica, Arial; padding-top: 50px; }
+header {position: fixed; height: 50px; top: 0; border-bottom: 1px solid black; padding: 1em; width: 100%; background: white;}
+#chatname { }
+#left-col {width: 80%; margin-bottom: 3em; float: left; }
+#right-col {width: 20%; height: 100%; margin-bottom: 3em; padding-left: 1em; border-left: 1px solid black; float: right; position: fixed; right: 0;}
+
+
+#usernames { padding: 1em; position: top; width: 100%;}
+#connected-users {list-style-type: none; }
+form { background: black; border-top: 1px solid black; position: fixed; bottom: 0; width: 100%; }
+form input { border: 0; padding: 1em; border: 1px 1px 1px 1px;}
+form button { width: 100%; color: white; background: blue; border: 0; padding: 0em; }
+form input#m { width: 100%;}
+#messages { list-style-type: none; padding: 0; }
+#messages li { padding: 0.5em 1em; }
+#messages li:nth-child(odd) { background: #eee; }
+#messages li.msg-own { color: blue; }
+#messages li.msg-user-connect {color: green; }
+#messages li.msg-user-disconnect {color: red; }
+
+form#name-form {
+  size: 200%;
+  position: initial;
+}
+
+form input#name-input {
+  size: 200%;
+  width: 100%;
+}

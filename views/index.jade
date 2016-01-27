@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(action='', method='post')
+    input(name='chatname', type='text', placeholder='enter a chat name')
